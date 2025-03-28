@@ -2,11 +2,13 @@
 
 body{
     background-color: none;
+    margin: 15px;
+    padding: 5px;
 }
 .navbar{
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border: 5px dotted red;
    
@@ -41,6 +43,7 @@ main{
     padding: 2px;
     margin: 10px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     border: 1px solid blue;
 }
