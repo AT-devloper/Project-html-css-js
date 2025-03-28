@@ -1,0 +1,67 @@
+
+
+body{
+    background-color: none;
+}
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px dotted red;
+   
+}
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding-right: 100px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    border: 2px solid black;
+    padding: 1%;
+}
+
+.bigim{
+    display: grid;
+    border: 5px double red;
+    padding: 20px;
+    height: 250px;
+}
+.Prod{
+    border: 2px solid green;
+    padding: 20px;
+}
+.container{
+    padding: 2px;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid blue;
+}
+.box{
+    height: 350px;
+    width: 300px;
+    margin: 20px;
+    border: 2px solid red;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    align-items: center;
+}
