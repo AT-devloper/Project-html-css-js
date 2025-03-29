@@ -1,23 +1,30 @@
-
+html{
+    border: 2px solid blue;
+    
+}
 
 body{
     background-color: none;
     margin: 15px;
     padding: 5px;
 }
+
 .navbar{
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    border: 5px dotted red;
+    border: 2px solid green;
+    padding-left: 50px;
+    padding-right: 80px;
    
 }
 .navbar ul{
     display: flex;
     gap: 40px;
     list-style: none;
-    padding-right: 100px;
+    padding: 8px;
+    border: 1px solid red;
 }
 
 .navbar ul li a{
@@ -41,10 +48,10 @@ main{
 }
 .container{
     padding: 2px;
-    margin: 10px;
+    margin: 5px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    /* flex-wrap: wrap; */
+    gap: 10px;
     border: 1px solid blue;
 }
 .box{
@@ -67,4 +74,7 @@ main{
 
 footer{
     align-items: center;
+    border: 2px solid indianred;
+    margin: 2px;
+    padding: 10px;
 }
