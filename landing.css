@@ -1,5 +1,6 @@
 html{
     border: 2px solid blue;
+    padding: 10px;
     
 }
 
@@ -53,14 +54,15 @@ body{
     .navbar ul{
         display: none;
         position: absolute;
-        top: 100px;
-        right: 0%;
+        top: 40px;
+        right: 6%;
         background-color:transparent;       
         gap: 5px;
     } 
     .navbar ul li{      
         padding: 12px;
         color: #fff;
+        align-content: center;
     }   
 }
 
@@ -70,10 +72,15 @@ main{
 }
 
 .bigim{
-    display: grid;
     border: 5px double red;
-    padding: 20px;
-    height: 250px;
+    border-radius: 20px;
+    padding: 2px;
+    
+   
+}
+.bim{
+    border: 1px solid black;
+    border-radius: 20px;
 }
 .Prod{
     border: 2px solid green;
@@ -84,7 +91,7 @@ main{
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     border: 1px solid blue;
 
 }
