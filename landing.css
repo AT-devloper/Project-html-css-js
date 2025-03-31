@@ -5,8 +5,10 @@ html{
 
 body{
     background-color: none;
-    margin: 15px;
-    padding: 5px;
+    margin: 5px;
+    padding: 1px;
+    width: 100%;
+    align-items: center;
 }
 
 .navbar{
@@ -28,9 +30,40 @@ body{
 }
 
 .navbar ul li a{
+    border: 1px solid black;
     text-decoration: none;
     color: black;
+
 }
+.navbar label{
+    display: none;
+}
+#click{
+    display: none;
+}
+#click:checked~.navbar ul{
+    display: block;
+}
+
+
+@media screen and (max-width:735px){
+    .navbar label{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0%;
+        background-color:transparent;       
+        gap: 5px;
+    } 
+    .navbar ul li{      
+        padding: 12px;
+        color: #fff;
+    }   
+}
+
 main{
     border: 2px solid black;
     padding: 1%;
@@ -47,12 +80,13 @@ main{
     padding: 20px;
 }
 .container{
-    padding: 2px;
+    padding: 1px;
     margin: 5px;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 10px;
     border: 1px solid blue;
+
 }
 .box{
     height: 350px;
