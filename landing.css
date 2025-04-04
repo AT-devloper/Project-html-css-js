@@ -4,13 +4,17 @@ html{
     padding: 10px;
     
 }
-
 body{
-    background-color: none;
+    background-image: url(" ");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 5px;
     padding: 1px;
     width: 100%;
     align-items: center;
+
 }
 
 .navbar{
