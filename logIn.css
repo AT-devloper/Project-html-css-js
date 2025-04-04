@@ -5,9 +5,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     overflow-y: hidden;
-
 }
-.sign{
+.log{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: .1px solid transparent;
@@ -15,7 +14,7 @@ body{
     box-shadow: 0px 0px 80px whitesmoke;
     padding: 50px;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 15%;
     width: 25%;
    
    
@@ -40,7 +39,7 @@ input{
     
 }
 #gender{
-    
+    color: white;
 }
 button{
     color: blue;
