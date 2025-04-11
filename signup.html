@@ -11,38 +11,49 @@
     <div class="sign">
     <h1>SIGNUP</h1>
     
-     <form action="" >
+     <form action="" onsubmit="return sin()" >
 
         <label for="">Name :</label>
-        <input type="text" id="name" placeholder="Fill With Your Name"> <br><br>
+        <input type="text" id="name" placeholder="Fill With Your Name" required> <br><br>
 
         <label for="">Contact :</label>
-        <input type="text" id="cont" placeholder="Fill with Your Contact"> <br><br>
+        <input type="text" id="cont" placeholder="Fill with Your Contact" > <br><br>
 
         <label for="">Email :</label>
-        <input type="text" id="email" placeholder="Fill with Your Email"> <br><br>
+        <input type="text" id="email" placeholder="Fill with Your Email" required> <br><br>
 
         <label for="">City  :</label>
         <input type="text" id="city" placeholder="Fill with Your City"> <br><br>
 
         <label for="">Age :</label>
-        <input type="text" id="age" placeholder="Fill with Your Age"> <br><br>
+        <input type="text" id="age" placeholder="Fill with Your Age" required> <br><br>
 
-        <label for="">Gender  :</label>
-        <input type="radio"  id="gender" >Male
-        <input type="radio"  id="gender" >Female
-        <input type="radio"  id="gender" >Other's <br><br>
+
+        <label for=""> Gender :</label>
+         <select id="gender">
+            <option value="not">Perfer not say</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+
+            
+
+        </select><br><br>
+
+        
+        <label for="">Username :</label>
+        <input type="text" id="uname" placeholder="Fill with Your Username" required> <br><br>
 
         <label for="">Password  :</label>
-        <input type="text" id="pass" placeholder="Fill with Your Password"> <br><br><br>
+        <input type="text" id="pass" placeholder="Fill with Your Password" required> <br><br><br>
         
 
-        <button >SignUp</button>    </t>
+        <button type="submit" value="submit">SignUp</button>    
         <button><a href="#">Cancel</a></button>
       
      </form>
     <div>
 
-
+<script src="SL.js"></script>
 </body>
 </html>

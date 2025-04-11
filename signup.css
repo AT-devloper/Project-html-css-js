@@ -17,9 +17,6 @@ body{
     margin: auto;
     margin-top: 10%;
     width: 25%;
-   
-   
-
 }
 h1{
     color: white;
@@ -28,18 +25,18 @@ h1{
 label{
     font-size: large;
     color: #fff;
-   
 }
 input{
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border:1px solid gray;
-    color:blue;
+    color:white;
     background-color: transparent;
-    
-    
 }
-
+#gender{
+    background-color: transparent;
+    color:gray;
+}
 button{
     color: blue;
     border-radius: 30px;
