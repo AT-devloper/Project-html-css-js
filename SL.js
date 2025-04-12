@@ -2,19 +2,15 @@ function sin(){
     let Sdata={
         Name : document.querySelector("#name").value,
         Cont : document.querySelector("#cont").value,
-        Email :document.querySelector("#email").value,
+        Email:document.querySelector("#email").value,
         City : document.querySelector("#city").value,
-        Age : document.querySelector("#age").value,
-        Gen : document.querySelector("#gender").value,
-        Uname:document.querySelector("#uname").value,
         Pass : document.querySelector("#pass").value,
     }
 
     localStorage.setItem("Sidata",JSON.stringify(Sdata));
     let user =JSON.parse(localStorage.getItem('Sidata'));
 
-    console.log(user);
-
+    // console.log(user);
     location.href="login.html"
     return false
 }
@@ -28,9 +24,18 @@ function log(){
     if(user.Email==Lname&& user.Pass==Lpass){
 
         console.log(Lname,user.Pass)
-        alert("WELCOME USER");
+        Swal.fire({
+            title: "LogIn Complete",
+            icon: "success",
+            draggable: true
+          });
     }
     
-    else{alert("fill correct email or passward")}
+    else{Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please Enter correct Email or Password",
+        footer: '<a href="#">Why do I have this issue?</a>'
+      });}
     return false
 }

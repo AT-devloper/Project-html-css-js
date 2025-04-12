@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  
 
 </head>
 <body>
@@ -14,13 +20,14 @@
     <header>
         <input type="checkbox" id="click"></section>
           <nav class="navbar">
-            <h1>AT-MART</h1>
-            <ul>
-                <li><a href="">Account</a></li>
-                <li><a href="">Cart</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="#foot">More</a></li>
-            </ul>
+            <h1>R!Do</h1>
+            <ul>   
+                <li><div class="H"><a href="" > Home</a></div> </li>
+                <li><div class="H"><a href=""> Account </a></div></li>
+                <li><div class="H"><a href="" > About</a></div></li>
+                <li><div class="H"><a href="" >Contact us</a></div></li>
+                <li><div class="login"><a href="signup.html">Signup / Login</a></div></li>
+        </ul>
             <label for="click">
                 <i class="fa-solid fa-bars-progress"></i>
             </label>
@@ -29,14 +36,29 @@
 
     <main>
 
-        <section class="bigim">
-           <div><img class="bim" src="images/flash-sale.png" height="300px" width="100%" alt=""></div>
-        </section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="bim" src="images/Mountain1.jpg" height="300px" width="100%" alt=""></div>
+              <div class="swiper-slide"><img class="bim" src="images/Mountain1.jpg" height="300px" width="100%" alt=""></div>
+              <div class="swiper-slide"><img class="bim" src="images/Mountain1.jpg" height="300px" width="100%" alt=""></div>
+              <div class="swiper-slide"><img class="bim" src="images/Mountain1.jpg" height="300px" width="100%" alt=""></div>
+              <div class="swiper-slide"><img class="bim" src="images/Mountain1.jpg" height="300px" width="100%" alt=""></div>
+              <div class="swiper-slide"><img class="bim" src="images/Mountain1.jpg" height="300px" width="100%" alt=""></div>
+              <div class="swiper-slide"><img class="bim" src="images/Mountain1.jpg" height="300px" width="100%" alt=""></div>
+              <div class="swiper-slide"><img class="bim" src="images/Mountain1.jpg" height="300px" width="100%" alt=""></div>
+              <div class="swiper-slide"><img class="bim" src="images/Mountain1.jpg" height="300px" width="100%" alt=""></div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div> -->
+          </div>
+
+
         
     <br>
-
+    <div data-aos="fade-right">  
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium adipisci minus magnam excepturi blanditiis sapiente sint quisquam reiciendis, sit, quo unde deleniti autem aspernatur ex repudiandae nulla ipsa doloribus error.</p>
-    
+    </div> 
     <br>
     
     <section class="Prod">
@@ -53,45 +75,7 @@
 
     <br>
     
-    <section class="Prod">
-        
-        <h1>Product :- 2 </h1>
-
-        <section class="container">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-            <div class="box">4</div>
-        </section>
-    </section>
-
-    <br>
     
-    <section class="Prod">
-        
-        <h1>Product :- 3 </h1>
-
-        <section class="container">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-            <div class="box">4</div>
-        </section>
-    </section>
-    
-    <br>
-
-    <section class="Prod">
-        
-        <h1>Product :- 4 </h1>
-
-        <section class="container">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-            <div class="box">4</div>
-        </section>
-    </section>
 
 
 
@@ -113,5 +97,18 @@
     </h2>
     </footer>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+
+    <script src="Vanta.js"></script>
+    
+
+
+    <script src="landing.js"></script>
 </body>
 </html>

@@ -1,58 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="ht">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="sweetalert2.min.css">
+
 </head>
-<body>
-    
-    <div class="sign">
-    <h1>SIGNUP</h1>
-    
-     <form action="" onsubmit="return sin()" >
-
-        <label for="">Name :</label>
-        <input type="text" id="name" placeholder="Fill With Your Name" required> <br><br>
-
-        <label for="">Contact :</label>
-        <input type="text" id="cont" placeholder="Fill with Your Contact" > <br><br>
-
-        <label for="">Email :</label>
-        <input type="text" id="email" placeholder="Fill with Your Email" required> <br><br>
-
-        <label for="">City  :</label>
-        <input type="text" id="city" placeholder="Fill with Your City"> <br><br>
-
-        <label for="">Age :</label>
-        <input type="text" id="age" placeholder="Fill with Your Age" required> <br><br>
-
-
-        <label for=""> Gender :</label>
-         <select id="gender">
-            <option value="not">Perfer not say</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-
-            
-
-        </select><br><br>
-
+<body >
+        <section class="wrapper" >
+            <form action="">
         
-        <label for="">Username :</label>
-        <input type="text" id="uname" placeholder="Fill with Your Username" required> <br><br>
-
-        <label for="">Password  :</label>
-        <input type="text" id="pass" placeholder="Fill with Your Password" required> <br><br><br>
+            <h1>SignUp</h1>
         
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Enter name" required>
+                <i class="fa-regular fa-user"></i>
+            </div>
 
-        <button type="submit" value="submit">SignUp</button>    
-        <button><a href="#">Cancel</a></button>
-      
-     </form>
-    <div>
+            <div class="input-box">
+                <input type="text" id="cont" placeholder="Enter Contact" required>
+                <i class="fa-regular fa-address-book"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="email" placeholder="Enter Email" required>
+                <i class="fa-solid fa-at" ></i>
+            </div>
+
+        <div class="input-box">
+            <input type="text" id="city" placeholder="Enter City" required>
+            <i class="fa-solid fa-tree-city"></i>
+        </div>
+
+        <div class="input-box">
+            <input type="text" id="pass" placeholder="password" required>
+            <i class="fa-solid fa-user-lock"></i>
+        </div>
+        
+        
+        <div class="remeber-forget">
+            <lable>
+                <input type="checkbox">Remember Me
+            </lable>
+        </div>
+        
+        <button type="submit" class="btn" onclick="return sin()">SignUp</button>
+       
+        </form>
+            </section>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+        <script src="Vanta.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="sweetalert2.min.js"></script>
 
 <script src="SL.js"></script>
 </body>
