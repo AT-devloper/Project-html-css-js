@@ -335,7 +335,7 @@ main{
 }
 .ser{
     
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
