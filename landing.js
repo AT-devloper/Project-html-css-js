@@ -1,16 +1,12 @@
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+function ri(){
+    let Sdata={
+    pick : document.querySelector("#pl").value,
+    drop : document.querySelector("#dl").value
+}
+
+localStorage.setItem("Sldata",JSON.stringify(Sdata));
+
+let user =JSON.parse(localStorage.getItem('Sldata'));
+return false
+
+}
