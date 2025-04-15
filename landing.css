@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: space-between;   
     align-items: center;    
-    border: 3px solid rgba(173, 59, 59, 0.2);
+    border: 2px solid lightskyblue;
     box-shadow: 0 0 10px rgba(o, 0, o, .2);
     border-radius: 5px;
     padding: 0px 30px; 
@@ -28,10 +28,19 @@ body{
    
 }
 .logo{
-     color: black;
-     margin-left: 60px;
-     font-size: 30px;
-     font-family: "Poppins", sans-serif;
+    
+    width: 10%;
+    color: black;
+    margin-left: 60px;
+}
+.logo r{
+    background: lightskyblue;
+    
+    border-radius: 8px;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    margin: 0%;
 }
 .navbar ul{
     font-family:  "Poppins", sans-serif;
@@ -89,30 +98,8 @@ body{
     display: block;
 }
 
-
-@media screen and (max-width:910px){
-    .navbar label{
-        display: block;
-    }
-    .navbar ul{
-        display: none;
-        position: fixed;
-        top: 40px;
-        right: 0%;
-        background-color:wheat;       
-    } 
-    .navbar ul li{      
-        backdrop-filter: blur(10px);
-        padding: 12px;
-        color: #fff;
-        align-content: center;
-        margin: 5px;
-        
-    }   
-}
-
 main{
-    padding: 1%;
+    margin: 15px;
 }
 
 .d{
@@ -121,7 +108,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 100px;
+    gap: 10%  ;
     padding: 40px;
     backdrop-filter: blur(10px);
     background:lightskyblue;
@@ -132,8 +119,8 @@ main{
     height: 85%;
     box-shadow: 0 0 50px 5px #333;
 
-     border-radius: 20px;
-     margin: 50px;
+    border-radius: 20px;
+    margin: 50px;
     
 }
 .db p{
@@ -156,51 +143,6 @@ main{
 .db p1 h{
     text-decoration: underline rgb(251, 190, 7) 5px ;
 }
-
-
-
-
-
-.d1{
-    background:rgb(251, 239, 79);
-   
-    border-radius: 20px;
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 100px;
-    padding: 40px;
-
-    
-}
-
-.db1 p{
-    width: 380px;
-    height: 40px;
-    font-size: 30px;
-    font-family:  "Poppins", sans-serif;
-    background-color: lightskyblue;
-    border-radius: 10px;
-    align-content: center;
-    
-}
-.db1 p c{
-    font-size:50px ;
-    font-family:  "Poppins", sans-serif;
-}
-.db1 p1{
-    font-family:  "Poppins", sans-serif;
-    font-size: larger;
-    letter-spacing: 2px;
-    font-size: 15px;
-
-}
-.db1 p1 ha{
-    font-size: 22px;
-    text-decoration: underline rgb(251, 190, 7) 5px ;
-}
-
 
 
 
@@ -323,7 +265,7 @@ main{
 }
 
 .sr{
-    margin-left: 43%;
+    margin-left: 5%;
     font-size: 30px;
     width: 200px;
     height: 18px;
@@ -359,34 +301,72 @@ main{
 
 }
 .ig{
+    
     margin: 50px;
     top: 50px;
     border-radius: 20px;
     margin: 20px;
     box-shadow: 0 0 20px 5px #333;
 }
-
-
 .about{
-    margin-left: 43%;
+    margin-left: 5%;
     font-size: 30px;
     width: 220px;
     height: 18px;
     font-family:  "Poppins", sans-serif;
-    background-color: rgb(251, 239, 79);
+    background: rgb(251, 239, 79);
     border-radius: 10px;
     align-content: center;
     text-decoration: underline lightskyblue;
 }
 
+.d1{
+    background:rgb(251, 239, 79);
+    border-radius: 20px;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+    padding: 40px;
 
-
-.foot{
-
-  
     
-    border: 2px solid indianred;
+}
+
+.db1 p{
+    width: 380px;
+    height: 40px;
+    font-size: 30px;
+    font-family:  "Poppins", sans-serif;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    align-content: center;
+    
+}
+.db1 p c{
+    font-size:50px ;
+    font-family:  "Poppins", sans-serif;
+}
+.db1 p1{
+    font-family:  "Poppins", sans-serif;
+    font-size: larger;
+    letter-spacing: 2px;
+    font-size: 15px;
+
+}
+.db1 p1 ha{
+    font-size: 22px;
+    text-decoration: underline rgb(251, 190, 7) 5px ;
+}
+.foot{
+    
+    margin-left: 43%;
+    border-radius: 15px;
+    background:/* linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),*/gray; 
+    
     margin: 2px;
+    margin-right: 13px;
+    margin-left: 15px;
     padding: 5px;
 }
 
@@ -409,13 +389,30 @@ main{
     gap: 50px;
 }
 #co{
-    font-size: 60px;
+    font-size: 150%;
     
 }
 
 
 @media screen and (max-width:910px){
-
+    .navbar label{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+        position: fixed;
+        top: 40px;
+        right: 0%;
+        background-color:wheat;       
+    } 
+    .navbar ul li{      
+        backdrop-filter: blur(10px);
+        padding: 12px;
+        color: #fff;
+        align-content: center;
+        margin: 5px;
+        
+    }   
     .d{
         display: flex;
         flex-direction: column;
@@ -441,11 +438,21 @@ main{
     
 
     .wrapper{
-        margin:30px ;
+        
+        margin:70px ;
     }
 
+    .ser{
+       
+        height: 120vh;}
 
-
-
+    .ig{
+        margin-top: 3px;
+        height: 150px;
+        width: 150px;
+    }
+    .foll{
+     margin-left: 10%;
+    }
 }
 

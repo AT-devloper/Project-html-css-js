@@ -1,0 +1,166 @@
+body{
+    background:lightgrey;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;    
+    border: 3px solid lightskyblue;
+    box-shadow: 0 0 10px rgba(o, 0, o, .2);
+    border-radius: 10px;
+    padding: 0px 30px; 
+    backdrop-filter: blur(10px); 
+}
+
+.logo{
+    
+    width: 10%;
+    color: black;
+    margin-left: 60px;
+}
+
+.logo r{
+    background: lightskyblue;
+    border-radius: 8px;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    margin: 0%;
+}
+
+.navbar ul{
+    font-family:  "Poppins", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none; 
+}
+
+.navbar ul li a{
+   
+    text-decoration: none;
+    color: black;
+
+}
+
+.H a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.H a:hover{
+    background-color: transparent;
+    border-bottom: 5px solid lightskyblue;
+  
+}
+
+.btn{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 96.5%;  
+    height: 55px;
+    background: rgb(247, 212, 18);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(o, 0, o, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    position: fixed;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    border: 1px solid  rgb(0, 0, 0);
+    color:  rgb(0, 0, 0);
+}
+
+.loc{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 160px;
+}
+
+.wrapper .input-box{
+
+    border: 3px solid gray;
+    position: relative;
+    margin: 1px ;
+    border-radius: 15px;
+    width: 100%;
+    background: whitesmoke;
+}
+
+.input-box input{
+
+    width: 94%;
+    height:  85%;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-size: 20px;
+    color:gray;
+    padding: 20px ;
+    padding-left :4.5%;
+
+}
+
+.input-box input::placeholder{
+    color: gray;
+   
+}
+
+.input-box i{
+    position: absolute;
+    left:25px;
+    top: 50%;
+    transform : translateY(-50%);
+    font-size: 20px;
+}
+
+.sv{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 320px;   
+}
+
+.st{
+    padding: 30px;
+    font-size: 25px;
+    text-decoration: underline rgb(247, 212, 18);
+}
+
+
+.te{
+    display: flex;
+    align-items: center;
+    border: 2px solid gray;
+    margin:1px ;
+    background: whitesmoke;
+    height: 22%;
+    border-radius: 10px;   
+}
+
+.ig{
+    height: 100%;
+}
+
+.t{
+    font-size: 20px;
+    font-weight: 1200px;
+}

@@ -31,11 +31,15 @@ function log(){
           });
     }
     
-    else{Swal.fire({
+    else{
+        Swal.fire({
         icon: "error",
         title: "Oops...",
         text: "Please Enter correct Email or Password",
-        footer: '<a href="#">Why do I have this issue?</a>'
+        footer: '<a href="#">Why do I have this issue?</a>',
       });}
+
+
+    location.href="landing.html"
     return false
 }
