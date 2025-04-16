@@ -1,6 +1,5 @@
 
-
-function bo(){
+function ok(){
 
 let ddata={
     name : document.querySelector("#nam").value,
@@ -54,7 +53,15 @@ else if(deta.cont.length>10 || deta.cont.length<10){
     return false 
 }
 
-    alert("done")
+Swal.fire({
+    title: "Booking Complete",
+    icon: "success",
+    draggable: true
+  });
+
+  location.href="show.html"
+
+  return false
 }
 
 
@@ -83,12 +90,11 @@ fil.innerHTML+=`
 })}
 
 let Del=(id)=>{
-
 let url=`http://localhost:3000/user/${id}`
 fetch(url,{method:"DELETE"})
 }
 
-let ok=()=>{
+let book=()=>{
 let inpname = document.querySelector('#nam').value
 let inpcont = document.querySelector('#con').value
 
@@ -120,10 +126,8 @@ console.log(data);
 let fomdt=document.querySelector("#showdata")
 fomdt.innerHTML=`
 <br><br>
-Name : <input type="text" id="upname" value="${data.name}"> Contact : <input type="text" id="upcont" value="${data.contact}"> <br><br>
+Name : <input type="text" id="upname" value="${data.name}"> Contact : <input type="text" id="upcont" value="${data.contact}"><br><br>
 <input type="submit" id="bt" value="Edited" onclick="return Fup('${data.id}')">
-
-
 `
 }
 

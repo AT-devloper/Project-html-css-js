@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="boking.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="sweetalert2.min.css">
+ 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
         <br>
 
         <section class="wrapper"  data-aos="fade-down"data-aos-duration="900">
-            <form action="" >
+            <form action=""  onsubmit="return book()" >
             <div class="loc">
                 <h class="St" >Details :-</h>
                 <div class="input-box">
@@ -42,7 +42,7 @@
             
             <h class="St" >Select service :-</h>
 
-            <form action="">
+            <form action="landing.html">
             <br>
             <input type="checkbox" id="click">
             <div class="te" id="bike" data-aos="zoom-in-up"data-aos-duration="1050">
@@ -79,7 +79,7 @@
 
 <br>
             <div>
-                <button type="submit" class="btn" onclick="return bo()" >Book Now</button>
+                <button type="submit" class="btn" onclick="return ok()" >Book Now</button>
             </div>
 
         </form>
@@ -105,7 +105,7 @@
         </script>
 
          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-         <script src="sweetalert2.min.js"></script>
+         
 
     <script src="landing.js"></script>
     <script src="boking.js"></script>
