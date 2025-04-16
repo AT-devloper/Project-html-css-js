@@ -117,7 +117,7 @@ main{
 }
 .da img{
     height: 85%;
-    box-shadow: 0 0 50px 5px #333;
+    box-shadow: 0 0 30px 5px #333;
 
     border-radius: 20px;
     margin: 50px;
@@ -390,7 +390,14 @@ main{
 }
 #co{
     font-size: 150%;
+    transition: .5s;
+}
+#co:hover{
     
+    box-shadow: 0 0 40px 2px white;
+    border-radius: 15px ;
+    font-size:170% ;
+    background: transparent;
 }
 
 

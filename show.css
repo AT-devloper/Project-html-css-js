@@ -1,0 +1,39 @@
+body{   
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(./images/map.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    border-radius: 15px;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.tic{
+    
+    width: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(o, 0, o, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 40px;
+    box-shadow: 0 0 50px 5px white;
+}
+
+.dt{
+    margin-left: 5%;
+    font-size: 30px;
+    width: 220px;
+    height: 8px;
+    font-family:  "Poppins", sans-serif;
+    background: transparent;
+    border-radius: 5px;
+    align-content: center;
+    text-decoration: underline lightskyblue;
+}

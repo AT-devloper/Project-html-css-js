@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="show.css">
+</head>
+<body onload="fetchdata()">
+
+        <section class="tic">
+            
+
+
+
+            <div class="tic1">
+                <h class="dt"> BOOKING DETAILS</h>
+
+                <table border="1" width="500px" class="tb" >
+                    <thead >
+                        <tr bgcolor="lightblue">
+                            <th><i class="fa-solid fa-id-badge" style="color: #f17006;"></i> Name</th>
+                          
+                            <th> <i class="fa-solid fa-file-contract"></i> Contact</th>
+
+                            <th><i class="fa-solid fa-user-xmark" style="color: #ed0707;"></i> Delete</th>
+                            <th><i class="fa-solid fa-file-pen" style="color:#8c00fffd;"></i> Edit</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody id="datafile" align="center">
+        
+                    </tbody>
+                </table>
+                
+            </div>
+            
+            <div id="showdata" align="center"></div>
+
+
+
+        </section>
+
+
+
+
+
+    <script src="boking.js"></script>
+    
+</body>
+</html>

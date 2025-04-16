@@ -67,9 +67,9 @@ body{
 }
 
 .btn{
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 96.5%;  
+    margin-left: 30px;
+    
+    width: 95%;  
     height: 55px;
     background: rgb(247, 212, 18);
     border: none;
@@ -88,6 +88,7 @@ body{
     background: transparent;
     border: 1px solid  rgb(0, 0, 0);
     color:  rgb(0, 0, 0);
+    text-decoration: 3px underline rgb(247, 212, 18);
 }
 
 .loc{
@@ -108,7 +109,7 @@ body{
 
 .input-box input{
 
-    width: 94%;
+    width: 88.4%;
     height:  85%;
     background: transparent;
     border-radius: 15px;
@@ -116,7 +117,7 @@ body{
     font-size: 20px;
     color:gray;
     padding: 20px ;
-    padding-left :4.5%;
+    padding-left :10%;
 
 }
 
@@ -139,7 +140,7 @@ body{
     height: 320px;   
 }
 
-.st{
+.St{
     padding: 30px;
     font-size: 25px;
     text-decoration: underline rgb(247, 212, 18);
@@ -153,7 +154,17 @@ body{
     margin:1px ;
     background: whitesmoke;
     height: 22%;
-    border-radius: 10px;   
+    border-radius: 10px;  
+   
+}
+.te:hover{
+    border-left: 8px solid rgb(247, 212, 18);
+    border-bottom: 5px solid gray;
+    border-right: 9px solid rgb(247, 212, 18);
+    padding: 2px;
+    padding-left: 40px;
+    box-shadow: 0 0 10px 5px gray;
+
 }
 
 .ig{
@@ -164,3 +175,23 @@ body{
     font-size: 20px;
     font-weight: 1200px;
 }
+
+.ra{
+
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform : translateY(-50%);
+    font-size: 17px;
+    color: green;
+
+
+}
+#click{
+    display: none;
+}
+#click:checked~{
+   
+}
+
+

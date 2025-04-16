@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="boking.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -16,61 +18,73 @@
     <nav class="navbar" data-aos="fade-down">
         <h1 class="logo"><r>R!!Do</r></h1>
         <ul data-aos="zoom-in" data-aos-duration="1500">   
-            <li><div class="H"><a href="#ho" > Home</a></div> </li>
+            <li><div class="H"><a href="landing.html" > Home</a></div> </li>
             </ul>
         </nav>
         <br>
 
         <section class="wrapper"  data-aos="fade-down"data-aos-duration="900">
+            <form action="" >
             <div class="loc">
-
+                <h class="St" >Details :-</h>
                 <div class="input-box">
-                    <input type="text" id="pic" placeholder="Enter Pick-Up Location" required>
-                    <i class="fa-solid fa-location-dot" style="color:red"></i>
+                    <input type="text" id="nam" placeholder="Enter Name" required>
+                 
+                    <i class="fa-solid fa-user"  style="color:blue"></i>
                 </div>
             <div class="input-box">
-                <input type="text" id="dro" placeholder="Enter Drop Location" required>
-                <i class="fa-solid fa-map-location-dot" style="color:bl"></i>
+                <input type="text" id="con" placeholder="Enter Contact no." required>
+                <i class="fa-solid fa-address-book" style="color:red"></i>
             </div>
-            </div><br>
+            </div><br><br><br>
 
         <div class="sv" data-aos="fade-down"data-aos-duration="900">
             
-            <h class="st" >Select service :-</h>
+            <h class="St" >Select service :-</h>
+
+            <form action="">
             <br>
-            <div class="te" data-aos="zoom-in-up"data-aos-duration="1050">
+            <input type="checkbox" id="click">
+            <div class="te" id="bike" data-aos="zoom-in-up"data-aos-duration="1050">
                 
                 <img class="ig" src="images/rbike.webp ">
-                <t class="s">Bike</t>    
+                <t class="s">Bike</t> 
+                <r class="ra">50-69 rs</r>   
             </div>
       
-                <div class="te"data-aos="zoom-in-up"data-aos-duration="1100">
+                <div class="te" id="auto"  data-aos="zoom-in-up"data-aos-duration="1100">
                 
                 <img class="ig" src="images/rauto.webp " >
                 <t class="s">Auto</t>
+                <r class="ra">80-99 rs</r>
             </div>
       
-                <div class="te" data-aos="zoom-in-up"data-aos-duration="1150">
-               
+                <div class="te" id="cab" data-aos="zoom-in-up"data-aos-duration="1150">
                 <img class="ig" src="images/rcar.webp ">
                 <t class="s">Cab</t>
+                <r class="ra">160-189 rs</r>
 
 
             </div>
       
-                <div class="te" data-aos="zoom-in-up"data-aos-duration="1200">
+                <div class="te" id="pcab" data-aos="zoom-in-up"data-aos-duration="1200">
                
                 <img class="ig" src="images/rcar1.webp "> 
                 <t class="s">Primium Cab</t>
+                <r class="ra">220-249 rs </r>
             </div>
+        </form>
         </div>
 
 
 <br>
             <div>
-                <button type="submit" class="btn" onclick=" return book()">Book Now</button>
+                <button type="submit" class="btn" onclick="return go() & book()" >Book Now</button>
             </div>
+
+        </form>
         </section>
+ 
 
 
 
@@ -90,9 +104,11 @@
             AOS.init();
         </script>
 
-
-
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         <script src="sweetalert2.min.js"></script>
 
     <script src="landing.js"></script>
+    <script src="boking.js"></script>
+   
 </body>
 </html>

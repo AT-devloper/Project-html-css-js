@@ -11,6 +11,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   
 
@@ -18,7 +20,7 @@
 <body>
 
     <header id="ho" >
-        <input type="checkbox" id="click"></section>
+        <input type="checkbox" id="click">
           <nav class="navbar" data-aos="fade-down">
             <h1 class="logo"><r>R!!Do</r></h1>
             <ul data-aos="zoom-in" data-aos-duration="1500">   
@@ -27,9 +29,9 @@
                 <li><div class="H"><a href="#ab" > About</a></div></li>
                 <li><div class="H"><a href="#us" >Contact us</a></div></li>
 
-                <li><div class="login">
+                <!-- <li><div class="login">
                     <a href="signup.html">Signup / Login</a>
-                                                        </div></li>
+                                                        </div></li> -->
         </ul>
             <label for="click">
                 <i class="fa-solid fa-bars-progress"></i>
@@ -50,11 +52,11 @@
                           We’re dedicated to making every ride safe 
                                     and comfortable.</p1></div>
 
-                                    <div class="da" data-aos="zoom-in-right" data-aos-duration="2500"><img class="bim" class="bim"  src="images/bike3.jpeg" ></div>
+                                    <div class="da" data-aos="zoom-in-right" data-aos-duration="2500"><img class="bim" src="images/bike3.jpeg" ></div>
             </section>
 
     <br>
-    <div class=" loca" id="bk">
+    <div class=" loca" id="bk" data-aos="zoom-out-up" data-aos-duration="900">
 
 
     <section class="wrapper" data-aos="zoom-out-up" data-aos-duration="1500" >
@@ -63,11 +65,11 @@
       <h1>Let's Moves Somewere</h1>
   
       <div class="input-box">
-          <input type="text" id="pl" placeholder="Enter Pick-Up Location" required>
+          <input type="text" id="pl" placeholder="Enter Pick-Up Location" required >
           <i class="fa-solid fa-location-dot"></i>
       </div>
   <div class="input-box">
-      <input type="text" id="dl" placeholder="Enter Drop Location" required>
+      <input type="text" id="dl" placeholder="Enter Drop Location" required >
       <i class="fa-solid fa-map-location-dot"></i>
   </div>
   
@@ -164,7 +166,9 @@
     <script>
         AOS.init();
       </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="sweetalert2.min.js"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
