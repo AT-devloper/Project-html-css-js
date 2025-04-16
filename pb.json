@@ -1,12 +1,3 @@
 {
-  "user": [
-    {
-      "name": "Ayush",
-      "contact": "0987654321",
-      "pick": "bpl",
-      "drop": "bpl",
-      "id": "fd3e"
-    }
-  
-  ]
+  "user": []
 }

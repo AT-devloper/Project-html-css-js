@@ -14,7 +14,8 @@ body{
 }
 
 .tic{
-    
+    display: flex;
+   flex-wrap: wrap;
     width: 500px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
@@ -36,4 +37,29 @@ body{
     border-radius: 5px;
     align-content: center;
     text-decoration: underline lightskyblue;
+}
+
+#upname{
+    border-radius: 20px ;
+    height: 30px;
+    width: 30%;
+    font-family: "Poppins", sans-serif ;
+    font-size: 20px;
+}
+#upcont{
+    border-radius: 20px ;
+    height: 30px;
+    width: 30%;
+    font-family: "Poppins", sans-serif ;
+    font-size: 20px;
+
+}
+#bt{
+    border-radius: 20px ;
+    height: 30px;
+    width: 17%;
+    font-family: "Poppins", sans-serif ;
+    background: rgb(76, 203, 76);
+   
+
 }
