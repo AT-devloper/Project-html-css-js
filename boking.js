@@ -93,6 +93,7 @@ fil.innerHTML+=`
 let Del=(id)=>{
 let url=`http://localhost:3000/user/${id}`
 fetch(url,{method:"DELETE"})
+location.reload()
 }
 
 let book=()=>{
