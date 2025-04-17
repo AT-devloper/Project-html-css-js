@@ -71,8 +71,8 @@ body{
 .H a:hover{
     color: lightskyblue;
     background-color: transparent;
-    border-left: 5px solid lightskyblue;
-    border-right:  5px solid lightskyblue;
+    border-left: 5px solid rgb(251, 190, 7);
+    border-right:  5px solid rgb(251, 190, 7);
   
 }
 .login a{
@@ -86,8 +86,8 @@ body{
 }
 .login a:hover{
     background-color: transparent;
-    border: 1px solid rgb(251, 190, 7);
-    color: rgb(251, 190, 7);
+    border: 1px solid rgb(251, 239, 79);
+    color: rgb(251, 239, 79);
 }
 
 .navbar label{

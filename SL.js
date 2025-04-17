@@ -56,7 +56,7 @@ function sin(){
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Password have atleast 1 special charector",
+            text: "Password have atleast 1 special charactor",
         
             });
         return false 
@@ -80,6 +80,7 @@ function sin(){
 
 
     // console.log(user);
+
     location.href="login.html"
     return false
 }
