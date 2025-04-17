@@ -442,21 +442,22 @@ main{
         height:100vh;
         gap: 0px;
     }
-    
-
     .wrapper{
-        
         margin:70px ;
     }
-
+    .te t{
+        align-items: center;
+        padding-left:20px;
+        flex-wrap: wrap;
+    }
     .ser{
-       
-        height: 120vh;}
-
+        gap: 10px;
+        height: 80vh;
+    }
     .ig{
         margin-top: 3px;
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 120px;
     }
     .foll{
      margin-left: 10%;

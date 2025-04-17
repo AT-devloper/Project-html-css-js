@@ -1,14 +1,83 @@
 function sin(){
-    let Sdata={
+    let sdata={
         Name : document.querySelector("#name").value,
-        Cont : document.querySelector("#cont").value,
         Email:document.querySelector("#email").value,
         City : document.querySelector("#city").value,
         Pass : document.querySelector("#pass").value,
     }
 
-    localStorage.setItem("Sidata",JSON.stringify(Sdata));
+    localStorage.setItem("Sidata",JSON.stringify(sdata));
     let user =JSON.parse(localStorage.getItem('Sidata'));
+
+    if(user.Name==""){ 
+
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please Enter Username",
+    
+        });
+        
+        return false;
+    }
+    
+    else if(user.Email==""){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please Enter enter email",
+            });
+       
+        
+        return false;
+    }
+    
+    else if(!(user.Email.includes('@gmail.com'))){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please Enter with @gmail.com",
+            });
+        
+        return false 
+    }
+    
+    else if(user.Pass==""){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please Enter password",
+        
+            });
+        return false 
+    }
+
+    else if(!(user.Pass.match(/[!@#$%^&*()_+]/))){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Password have atleast 1 special charector",
+        
+            });
+        return false 
+    }
+    else if(pass.langth>5 || pass.langth<5){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Password langth must be 5 ",
+        
+            });
+        return false 
+    }
+
+    Swal.fire({
+        title: "Signup Complete",
+        icon: "success",
+        draggable: true
+      });
+    
+
 
     // console.log(user);
     location.href="login.html"
@@ -21,9 +90,10 @@ function log(){
 
        let user =JSON.parse(localStorage.getItem('Sidata'));
 
-    if(user.Email==Lname&& user.Pass==Lpass){
+    if(user.Email == Lname && user.Pass == Lpass){
 
         console.log(Lname,user.Pass)
+
         Swal.fire({
             title: "LogIn Complete",
             icon: "success",
@@ -35,11 +105,10 @@ function log(){
         Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Please Enter correct Email or Password",
-        footer: '<a href="#">Why do I have this issue?</a>',
+        text: "Please Enter Correct Email / Password",
       });}
 
 
-    location.href="landing.html"
+    location.href="index.html"
     return false
 }
