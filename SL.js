@@ -81,7 +81,7 @@ function sin(){
 
     // console.log(user);
 
-    location.href="login.html"
+    location.href="logIn.html"
     return false
 }
 
