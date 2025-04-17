@@ -212,4 +212,5 @@ fetch(url,{
 
     })
 });
+location.reload()
 }
