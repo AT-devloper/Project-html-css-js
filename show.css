@@ -1,42 +1,115 @@
 body{   
     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(./images/map.jpeg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
-    border-radius: 15px;
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    height: 100vh;
+
+}
+.navbar{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;    
+    border: 1px solid lightskyblue;
+    box-shadow: 0 0 10px rgba(o, 0, o, .2);
+    border-radius: 10px;
+    padding: 0px 30px; 
+    backdrop-filter: blur(10px); 
+}
+
+.logo{
+    
+    width: 10%;
+    color: black;
+    margin-left: 60px;
+}
+
+.logo r{
+    background: lightskyblue;
+    border-radius: 8px;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    margin: 0%;
+}
+
+.navbar ul{
+    font-family:  "Poppins", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none; 
+}
+
+.navbar ul li a{
+   
+    text-decoration: none;
+    color: white;
+
+}
+
+.H a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.H a:hover{
+    color: lightskyblue;
+    background-color: transparent;
+    border-left: 5px solid lightskyblue;
+    border-right:  5px solid lightskyblue;
 
 }
 
 .tic{
-    display: flex;
-   flex-wrap: wrap;
-    width: 500px;
+   
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.tic1{
+    
+    margin-top: 190px;
+    margin-left: 20%;
+    margin-right: 20%;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid lightskyblue;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px rgba(o, 0, o, .2);
     color: #fff;
-    border-radius: 10px;
-    padding: 10px 40px;
+    border-radius: 20px;
+    padding:15px;
     box-shadow: 0 0 50px 5px white;
+  
 }
 
 .dt{
+    
     margin-left: 5%;
-    font-size: 30px;
-    width: 220px;
-    height: 8px;
-    font-family:  "Poppins", sans-serif;
+    font-size: 22px;
+
     background: transparent;
     border-radius: 5px;
     align-content: center;
-    text-decoration: underline lightskyblue;
+    text-decoration: underline rgb(247, 212, 18);
+}
+.tb{
+    border-radius: 20px;
+    box-shadow: 0 0 30 5px white;
+    padding: 7px;
+    width:100%;
 }
 
 #upname{

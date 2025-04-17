@@ -1,182 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="ht">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-
-    <link rel="stylesheet" href="landing.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="sweetalert2.min.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
 
 </head>
-<body>
+<body >
+        <section class="wrapper" data-aos="zoom-out-up" data-aos-duration="1500">
+            <form action="">
+        
+            <h1>SignUp</h1>
+        
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Enter Username" >
+                <i class="fa-regular fa-user"></i>
+            </div>
 
-    <header id="ho" >
-        <input type="checkbox" id="click">
-          <nav class="navbar" data-aos="fade-down">
-            <h1 class="logo"><r>R!!Do</r></h1>
-            <ul data-aos="zoom-in" data-aos-duration="1500">   
-                <li><div class="H"><a href="#ho" > Home</a></div> </li>
-                <li><div class="H"><a href="#bk"> Book R!!do </a></div></li>
-                <li><div class="H"><a href="#ab" > About</a></div></li>
-                <li><div class="H"><a href="#us" >Contact us</a></div></li>
+            <div class="input-box">
+                <input type="text" id="email" placeholder="Enter Email" >
+                <i class="fa-solid fa-at" ></i>
+            </div>
 
-                <!-- <li><div class="login">
-                    <a href="signup.html">Signup / Login</a>
-                                                        </div></li> -->
-        </ul>
-            <label for="click">
-                <i class="fa-solid fa-bars-progress"></i>
-            </label>
-          </nav>
-    </header>
-
-    <main>
-
-            <section class="d"  data-aos="fade-up" data-aos-duration="500">
-                
-                <div class="db" data-aos="zoom-in-left"data-aos-duration="2500"> 
-                    <p>Safety For All .... </p>
-                    <p1><h>At R!!Do,</h>
-                      <br>
-                          Your safety is our priority.
-                          <br>
-                          We’re dedicated to making every ride safe 
-                                    and comfortable.</p1></div>
-
-                                    <div class="da" data-aos="zoom-in-right" data-aos-duration="2500"><img class="bim" src="images/bike3.jpeg" ></div>
+        <div class="input-box">
+            <input type="text" id="city" placeholder="Enter City" >
+            <i class="fa-solid fa-tree-city"></i>
+        </div>
+      
+        <div class="input-box">
+            <input type="text" id="pass" placeholder="password">
+            <i class="fa-solid fa-user-lock"></i>
+        </div>
+        
+        <button type="submit" class="btn" onclick="return sin()">SignUp</button>
+       
+        </form>
             </section>
 
-    <br>
-    <div class=" loca" id="bk" data-aos="zoom-out-up" data-aos-duration="900">
+
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+              </script>
+       
 
 
-    <section class="wrapper" data-aos="zoom-out-up" data-aos-duration="1500" >
-      <form action="">
-  
-      <h1>Let's Moves Somewere</h1>
-  
-      <div class="input-box">
-          <input type="text" id="pl" placeholder="Enter Pick-Up Location" required >
-          <i class="fa-solid fa-location-dot"></i>
-      </div>
-  <div class="input-box">
-      <input type="text" id="dl" placeholder="Enter Drop Location" required >
-      <i class="fa-solid fa-map-location-dot"></i>
-  </div>
-  
-  <button type="submit" class="btn" onclick="return ri()">Let's R!!do</button>
-  
-  </form>
-      </section>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      
 
-    </div>
-
-
-
-
-    
-
-
-      <h3 class="sr" data-aos="fade-up" data-aos-duration="600">-: Services :-</h3>
-
-    <section class="ser" data-aos="fade-up" data-aos-duration="500">
-
-
-         <div class="te" data-aos="zoom-in-up"data-aos-duration="2500">
-          <t>Bike</t>
-          <img class="ig" src="images/rbike.webp " width="350px" height="250px">
-          </div>
-
-          <div class="te"data-aos="zoom-in-up"data-aos-duration="2500">
-          <t>Auto</t>
-          <img class="ig" src="images/rauto.webp " width="350px" height="250px" alt="">
-          </div>
-
-          <div class="te" data-aos="zoom-in-up"data-aos-duration="2500">
-          <t>SharingAuto</t>
-          <img class="ig" src="images/rauto1.webp "  width="350px" height="250px" alt="">
-          </div>
-
-          <div class="te" data-aos="zoom-in-up"data-aos-duration="2500">
-          <t>Cab</t>
-          <img class="ig" src="images/rcar.webp " width="350px" height="250px" alt=""> 
-          </div>
-
-          <div class="te" data-aos="zoom-in-up"data-aos-duration="2500">
-          <t>PrimiumCab</t>
-          <img class="ig" src="images/rcar1.webp " width="350px" height="250px" alt=""> 
-          </div>
-          
-          <div class="te" data-aos="zoom-in-up"data-aos-duration="2500">
-           <t>Percles</t>
-          <img class="ig" src="images/rpar.webp " width="350px" height="250px" alt="">
-          </div>
-    </section>             
-    <h3 class="about" id="ab" data-aos="fade-up" data-aos-duration="400"> -: About Us :- </h3>
-
-                    <section class="d1"  data-aos="fade-up" data-aos-duration="500">
-
-                <div class="db1" data-aos="zoom-in-left"data-aos-duration="2500">
-            
-            
-                  <p><c>India’s Beloved</c>
-                      Bike Taxi Service
-                     </p>
-                     <br>  <br>  <br>
-                    <p1>
-                      <br>                                         
-                         <ha> What makes us different?</ha>
-                          <br>
-                          Our bike taxis can dodge the traffic during peak hours 
-                          and get you to the destination in a jiffy! 
-                          So when you think travel, think R!!Do.
-                        </p1></div>
-           
-                          <div class="da" data-aos="zoom-in-right" data-aos-duration="2500"><img class="bim" src="images/bike1.jpg" ></div>
-                        </section>
-
-
-
-    </main>
-    <footer class="foot" id="us" data-aos="fade-up" data-aos-duration="500">
-      <h5 class="foll" > -: Follow Us :- </h5>
-      <h2>
-        <div class="coicon">
-            <i id="co"  class="fa-brands fa-whatsapp" style="color: #00e01a;"></i>
-            <i id="co"  class="fa-brands fa-facebook" style="color: #0838f7;"></i>
-            <i id="co"  class="fa-brands fa-square-x-twitter"></i>
-            <i  id="co"   class="fa-brands fa-youtube" style="color: red"></i>
-        </div>
-    </h2>
-
-
-    </footer>
-
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
-
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-   <script src="sweetalert2.min.js"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-
-<script src="Vanta.js"></script>
-
-
-    <script src="landing.js"></script>
+<script src="SL.js"></script>
 </body>
 </html>

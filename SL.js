@@ -61,11 +61,11 @@ function sin(){
             });
         return false 
     }
-    else if(pass.langth>5 || pass.langth<5){
+    else if(pass.length>5 || pass.length<5){
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Password langth must be 5 ",
+            text: "Password length must be 5 ",
         
             });
         return false 
@@ -95,7 +95,7 @@ function log(){
         console.log(Lname,user.Pass)
 
         Swal.fire({
-            title: "LogIn Complete",
+            title: "Login Complete",
             icon: "success",
             draggable: true
           });
@@ -106,9 +106,11 @@ function log(){
         icon: "error",
         title: "Oops...",
         text: "Please Enter Correct Email / Password",
-      });}
+      });
+    return false
+    }
 
 
-    location.href="index.html"
+    location.href="landing.html"
     return false
 }
