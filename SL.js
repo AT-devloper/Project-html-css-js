@@ -115,3 +115,21 @@ function log(){
     location.href="landing.html"
     return false
 }
+
+function out(){
+
+    let user =JSON.parse(localStorage.getItem('Sidata'));
+    
+    let clr = localStorage.clear(user);
+
+    Swal.fire({
+        
+        title: "Logged out",
+        icon: "success",
+        draggable: true,
+      });
+   
+    location.href="index.html"
+    return false
+
+}

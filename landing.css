@@ -1,10 +1,11 @@
 html{
     scroll-behavior : smooth;
     height: 450vh;
+    overflow-x: hidden;
 }
 body{
     
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +26,7 @@ body{
     border-radius: 5px;
     padding: 0px 30px; 
     backdrop-filter: blur(10px);
+    z-index: 99;
    
 }
 .logo{
@@ -44,13 +46,14 @@ body{
 }
 .navbar ul{
     font-family:  "Poppins", sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;
     font-size: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     list-style: none; 
+    z-index: 999;
 }
 .navbar ul li a{
    
@@ -61,7 +64,7 @@ body{
 .H a{
     text-decoration: none;
     color: #fff;
-    padding: 10px 10px;
+    padding: 5px 5px;
     font-size: 15px;
     background-color: transparent;
     border-radius: 8px;
@@ -79,15 +82,16 @@ body{
     text-decoration: none;
     color: #fff;
     padding: 10px 15px;
-    font-size: 18 px;
+    font-size: 15px;
     background-color: rgb(251, 190, 7);
-    border-radius: 8px;
-    transition: 0.2s;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 .login a:hover{
     background-color: transparent;
-    border: 1px solid rgb(251, 239, 79);
-    color: rgb(251, 239, 79);
+   
+    background: red;
+    color: whitesmoke;
 }
 
 .navbar label{
@@ -96,16 +100,15 @@ body{
 #click{
     display: none;
 }
-#click:checked~.navbar ul{
-    display: block;
-}
 
 main{
-    margin: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
 }
 
 .d{
-    
+    position: relative;
     height: 85vh;
     display: flex;
     align-items: center;
@@ -115,6 +118,7 @@ main{
     backdrop-filter: blur(10px);
     background:lightskyblue;
     border-radius: 15px;
+    z-index: -1 !important;
     
 }
 .da img{
@@ -187,7 +191,6 @@ main{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
     border-radius: 15px;
     margin:0;
     padding: 0;
@@ -237,10 +240,10 @@ main{
 }
 .input-box i{
     position: absolute;
-    right: 2px;
+    right: 2px ;
     top: 90%;
     transform : translateY(-50%);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .wrapper .btn{
@@ -406,27 +409,52 @@ main{
 @media screen and (max-width:910px){
     .navbar label{
         display: block;
+        z-index: 10;     
+
     }
     .navbar ul{
         display: none;
-        position: fixed;
-        top: 40px;
-        right: 0%;
-        background-color:wheat;       
+        position: fixed !important;
+        top: 30px;
+        right: 4.5%;
+        background-color:wheat;  
+        z-index: 10 !important; 
+        border: 2px solid rgba(0, 0, 0, 0.361); 
+        backdrop-filter: blur(10px);  
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; 
     } 
+
+    #click:checked~.navbar ul{
+        display: block;
+        position: fixed !important;
+        z-index: 99 !important;
+
+    }
+    
+
     .navbar ul li{      
-        backdrop-filter: blur(10px);
-        padding: 12px;
-        color: #fff;
-        align-content: center;
-        margin: 5px;
         
-    }   
+        padding-top: 5px;
+        padding-bottom: 8px;
+        padding-right: 30px;
+        color: #fff;
+        margin: 5px;
+        z-index: 10;     
+
+        
+    } 
+    .login a{
+        padding: 5px 7px;
+        font-size: 15px;
+    }  
     .d{
         display: flex;
         flex-direction: column;
         height: 100vh;
         gap: 1%;
+        z-index: 1;
     }
     .da img{
         height: 85%;

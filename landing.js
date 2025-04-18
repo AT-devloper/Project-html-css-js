@@ -6,9 +6,9 @@ function ri(){
 
 
 localStorage.setItem("Sldata",JSON.stringify(Sdata));
-let user =JSON.parse(localStorage.getItem('Sldata'));
+let loca =JSON.parse(localStorage.getItem('Sldata'));
 
-if(user.pick==""){ 
+if(loca.pick==""){ 
     Swal.fire({
     icon: "error",
     title: "Oops...",
@@ -19,7 +19,7 @@ if(user.pick==""){
     
     return false;
 }
-else if(user.drop==""){
+else if(loca.drop==""){
     Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -38,6 +38,8 @@ location.href="boking.html"
 return false;
 
 }
+
+
 
 
 

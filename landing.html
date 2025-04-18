@@ -25,13 +25,13 @@
             <h1 class="logo"><r>R!!Do</r></h1>
             <ul data-aos="zoom-in" data-aos-duration="1500">   
                 <li><div class="H"><a href="#ho" > Home</a></div> </li>
-                <li><div class="H"><a href="#bk"> Book R!!do </a></div></li>
+                <li><div class="H"><a href="#bk" > Book R!!do </a></div></li>
                 <li><div class="H"><a href="#ab" > About</a></div></li>
                 <li><div class="H"><a href="#us" >Contact us</a></div></li>
 
-                <!-- <li><div class="login">
-                    <a href="signup.html">Signup / Login</a>
-                                                        </div></li> -->
+                <li><div class="login">
+                    <a onclick="return out()">logout</a>
+                  </div></li>
         </ul>
             <label for="click">
                 <i class="fa-solid fa-bars-progress"></i>
@@ -56,24 +56,25 @@
             </section>
 
     <br>
-    <div class=" loca" id="bk" data-aos="zoom-out-up" data-aos-duration="900">
+    <div class=" loca" id="bk" data-aos="fade-up" data-aos-duration="1800">
 
 
-    <section class="wrapper" data-aos="zoom-out-up" data-aos-duration="1500" >
+    <section class="wrapper" data-aos="zoom-out-up" data-aos-duration="1900" >
       <form action="">
   
       <h1>Let's Moves Somewere</h1>
   
       <div class="input-box">
-          <input type="text" id="pl" placeholder="Enter Pick-Up Location" required >
+          <input type="text" id="pl" placeholder="Pick-Up Location" required >
           <i class="fa-solid fa-location-dot"></i>
       </div>
   <div class="input-box">
-      <input type="text" id="dl" placeholder="Enter Drop Location" required >
+      <input type="text" id="dl" placeholder="Drop Location" required >
       <i class="fa-solid fa-map-location-dot"></i>
   </div>
   
   <button type="submit" class="btn" onclick="return ri()">Let's R!!do</button>
+  <div class="register-link">
   
   </form>
       </section>
@@ -198,7 +199,7 @@
 
 <script src="Vanta.js"></script>
 
-
+      <script src="SL.js"></script>
     <script src="landing.js"></script>
 </body>
 </html>
