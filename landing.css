@@ -462,13 +462,13 @@ main{
     }
     
     .d1{
-        display: flex;
-        flex-direction: column;
+        display:flex;
+        flex-direction:column;
         height:100vh;
         gap: 0px;
     }
     .wrapper{
-        margin:70px ;
+        margin:70px;
     }
     .te t{
         align-items: center;
@@ -476,16 +476,17 @@ main{
         flex-wrap: wrap;
     }
     .ser{
+        flex-wrap: wrap;
         gap: 10px;
         height: 80vh;
     }
     .ig{
-        margin-top: 3px;
+        margin-top:3px;
         height: 100px;
         width: 120px;
     }
     .foll{
-     margin-left: 10%;
+     margin-left:10%;
     }
 }
 
