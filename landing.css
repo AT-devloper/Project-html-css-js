@@ -206,7 +206,7 @@ main{
     position: relative;
     width: 85%;
     height: 45px;
-    margin: 54px 0;
+    margin: 54px 0 ;
 }
 .input-box input{
 
@@ -262,7 +262,7 @@ main{
     background-color: lightskyblue;
     border-radius: 10px;
     align-content: center;
-    text-decoration: underline  rgb(251, 239, 79);
+    text-decoration: underline wavy rgb(251, 239, 79);
 }
 .ser{
     
@@ -309,7 +309,7 @@ main{
     background: rgb(251, 239, 79);
     border-radius: 10px;
     align-content: center;
-    text-decoration: underline lightskyblue;
+    text-decoration: underline wavy lightskyblue;
 }
 
 .d1{
@@ -374,7 +374,7 @@ main{
     background-color: rgb(251, 239, 79);
     border-radius: 10px;
     align-content: center;
-    text-decoration: underline lightskyblue;
+    text-decoration: underline wavy lightskyblue;
 }
 .coicon{
 
@@ -406,15 +406,17 @@ main{
     .navbar ul{
         display: none;
         position: fixed !important;
+        height: 300%;
         top: 30px;
-        right: 4.5%;
+        right: 8%;
         background-color:wheat;  
         z-index: 10 !important; 
-        border: 2px solid rgba(0, 0, 0, 0.361); 
+        border: 2px solid rgba(21, 19, 17, 0.624); 
         backdrop-filter: blur(10px);  
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px; 
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px; 
+        box-shadow:0 20px 100px 5px #333;
     } 
 
     #click:checked~.navbar ul{
@@ -441,14 +443,14 @@ main{
         font-size: 15px;
     }  
     .d{
+        padding: 20px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         height: 100vh;
-        gap: 1%;
         z-index: 1;
     }
     .da img{
-        height: 85%;
+        height: 90%;
         box-shadow: 0 0 50px 5px #fff;
         border-radius: 10px;
         margin: 0px;
@@ -466,10 +468,29 @@ main{
         flex-direction:column;
         height:100vh;
         gap: 0px;
+        margin: 0%;
+    }
+    .db p1{
+        font-size: large;  
+    }
+    .db p1 h{
+        font-size: x-large;
+    }
+    
+    .db1{
+        margin:5%;
     }
     .wrapper{
+        height: 50%;
         margin:70px;
     }
+    .wrapper .input-box{
+        margin: 54px -15px;
+    }
+    .input-box i{
+        right: -30px ;
+    }
+   
     .te t{
         align-items: center;
         padding-left:20px;
@@ -482,8 +503,8 @@ main{
     }
     .ig{
         margin-top:3px;
-        height: 100px;
-        width: 120px;
+        height: 75px;
+        width: 90px;
     }
     .foll{
      margin-left:10%;
