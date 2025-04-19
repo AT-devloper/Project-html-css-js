@@ -64,7 +64,7 @@ body{
 .H a{
     text-decoration: none;
     color: #fff;
-    padding: 5px 5px;
+    padding: 5px 5px; 
     font-size: 15px;
     background-color: transparent;
     border-radius: 8px;
@@ -121,11 +121,6 @@ main{
     z-index: -1 !important;
     
 }
-.bim{
-    height: 300px;
-    border-radius: 20px;
-
-}
 .da img{
     height: 85%;
     box-shadow: 0 0 30px 5px #333;
@@ -136,6 +131,11 @@ main{
     scale:1.1;
     transition:.6s;
 }
+.bimg:hover{
+    scale:1.1;
+    transition:.6s;
+
+}
 .db p{
     width: 380px;
     height: 40px;
@@ -143,25 +143,16 @@ main{
     font-family:  "Poppins", sans-serif;
     background-color: rgb(251, 239, 79);
     border-radius: 10px;
-    margin-top: 30px;
-    
+    margin-top: 30px;  
 }
 .db p1{
     font-family:  "Poppins", sans-serif;
     font-size: larger;
     letter-spacing: 2px;
     font-size: 20px;
-
 }
 .db p1 h{
     text-decoration: underline rgb(251, 190, 7) 5px ;
-}
-
-.bigim{
-    border: 5px double red;
-    border-radius: 20px;
-    padding: 2px;
-
 }
 .Prod{
     border: 2px solid green;
@@ -174,7 +165,6 @@ main{
     flex-wrap: wrap;
     gap: 5px;
     border: 1px solid blue;
-
 }
 .box{
     height: 350px;
@@ -183,8 +173,6 @@ main{
     border: 2px solid red;
     
 }
-
-
 .loca{
     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(./images/map.jpeg);
     display: flex;
@@ -197,8 +185,6 @@ main{
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
-
 .wrapper{
 
     width: 500px;
@@ -245,7 +231,6 @@ main{
     transform : translateY(-50%);
     font-size: 18px;
 }
-
 .wrapper .btn{
     margin-top: 4%;
     margin-bottom: 1%;
@@ -268,7 +253,6 @@ main{
     border: 1px solid  rgb(247, 212, 18);;
     color:  rgb(247, 212, 18);;
 }
-
 .sr{
     margin-left: 5%;
     font-size: 30px;
@@ -303,7 +287,6 @@ main{
     font-size: 30px;
     font-family: "Poppins", sans-serif ;
     padding-left: 5%;
-
 }
 .ig{
     
@@ -312,6 +295,10 @@ main{
     border-radius: 20px;
     margin: 20px;
     box-shadow: 0 0 20px 5px #333;
+}
+.ig:hover{
+    scale:1.1;
+    transition:.6s;
 }
 .about{
     margin-left: 5%;
@@ -374,6 +361,9 @@ main{
     margin-left: 15px;
     padding: 5px;
 }
+.foot p{
+    font-size: medium;
+}
 
 .foll{
     margin-left: 46%;
@@ -395,17 +385,18 @@ main{
 }
 #co{
     font-size: 150%;
-    transition: .5s;
+   
 }
 #co:hover{
-    
+    transition: .3s;
     box-shadow: 0 0 40px 2px white;
     border-radius: 15px ;
-    font-size:170% ;
+    scale: 1.1;
     background: transparent;
 }
-
-
+.ro{
+    font-size: xx-large;
+}
 @media screen and (max-width:910px){
     .navbar label{
         display: block;
@@ -463,6 +454,11 @@ main{
         margin: 0px;
         width: 100%;
         left: 10px;
+       
+    }
+    .da img:hover{
+        scale: 1.1;
+        transition: .6s;
     }
     
     .d1{
