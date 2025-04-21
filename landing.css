@@ -266,7 +266,7 @@ main{
 }
 .ser{
     
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -289,7 +289,8 @@ main{
     padding-left: 5%;
 }
 .ig{
-    
+    height: 200px;
+    width: 250px;
     margin: 50px;
     top: 50px;
     border-radius: 20px;

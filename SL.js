@@ -47,7 +47,6 @@ function sin(){
             icon: "error",
             title: "Oops...",
             text: "Please Enter password",
-        
             });
         return false 
     }
@@ -57,7 +56,6 @@ function sin(){
             icon: "error",
             title: "Oops...",
             text: "Password have atleast 1 special charactor",
-        
             });
         return false 
     }
@@ -66,7 +64,6 @@ function sin(){
             icon: "error",
             title: "Oops...",
             text: "Password length must be 5 ",
-        
             });
         return false 
     }
@@ -76,11 +73,7 @@ function sin(){
         icon: "success",
         draggable: true
       });
-    
-
-
     // console.log(user);
-
     location.href="logIn.html"
     return false
 }
@@ -91,7 +84,7 @@ function log(){
 
        let user =JSON.parse(localStorage.getItem('Sidata'));
 
-    if(user.Email == Lname && user.Pass == Lpass){
+      if(user.Email == Lname && user.Pass == Lpass){
 
         console.log(Lname,user.Pass)
 
@@ -101,35 +94,26 @@ function log(){
             draggable: true
           });
     }
-    
-    else{
+      else{
         Swal.fire({
         icon: "error",
         title: "Oops...",
         text: "Please Enter Correct Email / Password",
       });
-    return false
+      return false
     }
-
-
     location.href="landing.html"
-    return false
+      return false
 }
 
 function out(){
-
     let user =JSON.parse(localStorage.getItem('Sidata'));
-    
-    let clr = localStorage.clear(user);
-
+    localStorage.clear(user);
     Swal.fire({
-        
         title: "Logged out",
         icon: "success",
         draggable: true,
       });
-   
     location.href="index.html"
     return false
-
 }

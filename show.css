@@ -80,8 +80,9 @@ body{
     width: 100%;
 }
 .tic1{
-    
-    margin-top: 190px;
+    height: 25%;
+    font-size: 25px;
+    margin-top: 15 %;
     margin-left: 20%;
     margin-right: 20%;
     background: transparent;
@@ -92,14 +93,16 @@ body{
     border-radius: 20px;
     padding:15px;
     box-shadow: 0 0 50px 5px white;
-  
+    overflow-x: scroll;
+    scrollbar-width: none;
+    display: flex;
 }
 
+
 .dt{
-    
+    font-size: 50px;
     margin-left: 5%;
     font-size: 22px;
-
     background: transparent;
     border-radius: 5px;
     align-content: center;
@@ -133,6 +136,4 @@ body{
     width: 17%;
     font-family: "Poppins", sans-serif ;
     background: rgb(76, 203, 76);
-   
-
 }
